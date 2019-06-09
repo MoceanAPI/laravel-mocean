@@ -2,6 +2,7 @@ Laravel Mocean
 ===============
 [![Latest Stable Version](https://img.shields.io/packagist/v/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
 [![Build Status](https://img.shields.io/travis/com/MoceanAPI/laravel-mocean.svg)](https://travis-ci.com/MoceanAPI/laravel-mocean)
+[![StyleCI](https://github.styleci.io/repos/190994433/shield?branch=master)](https://github.styleci.io/repos/190994433)
 [![License](https://img.shields.io/packagist/l/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
 [![Total Downloads](https://img.shields.io/packagist/dt/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
 
