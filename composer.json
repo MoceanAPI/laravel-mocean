@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.0",
         "mocean/client": "1.0.*",
-        "illuminate/support": "~4||~5",
+        "illuminate/support": "~4||~5"
     },
     "require-dev": {
         "illuminate/console": "~4||~5",
