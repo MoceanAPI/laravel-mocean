@@ -11,7 +11,7 @@
     },
     "require-dev": {
         "illuminate/console": "~4||~5",
-        "phpunit/phpunit": "~4.5",
+        "phpunit/phpunit": "~4.5 || ~8.0",
         "orchestra/testbench": "~3.0"
     },
     "autoload": {
