@@ -45,18 +45,18 @@ class Manager
                 'MOCEAN_API_SECRET' => $account['mocean-api-secret'],
             ];
         } else {
-            if (!isset($this->settings[$account])) {
+            if (! isset($this->settings[$account])) {
                 throw new InvalidArgumentException("Account \"$account\" is not configured.");
             }
 
             $settings = $this->settings[$account];
         }
 
-        if (!isset($settings['MOCEAN_API_KEY']) || $settings['MOCEAN_API_KEY'] === '') {
+        if (! isset($settings['MOCEAN_API_KEY']) || $settings['MOCEAN_API_KEY'] === '') {
             throw new InvalidArgumentException('MOCEAN_API_KEY is not configured');
         }
 
-        if (!isset($settings['MOCEAN_API_SECRET']) || $settings['MOCEAN_API_SECRET'] === '') {
+        if (! isset($settings['MOCEAN_API_SECRET']) || $settings['MOCEAN_API_SECRET'] === '') {
             throw new InvalidArgumentException('MOCEAN_API_SECRET is not configured');
         }
 
