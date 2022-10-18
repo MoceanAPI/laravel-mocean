@@ -1,0 +1,38 @@
+name: build
+on:
+  push:
+    branches: [master]
+    paths-ignore: 
+      - "**.md"
+      - ".github/workflows/**"
+  pull_request:
+    branches: [master]
+    paths-ignore: 
+      - "**.md"
+      - ".github/workflows/**"
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [7.2, 7.3, 7.4, 8.0]
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+      - uses: php-actions/composer@v5
+
+      - name: phpunit
+        uses: php-actions/phpunit@v2
+          with:
+          php_extensions: xdebug
+          bootstrap: vendor/autoload.php
+          configuration: phpunit.xml
+          args: --coverage-text
+        env:
+          XDEBUG_MODE: coverage
+          TEST_NAME: Scarlett
+    
