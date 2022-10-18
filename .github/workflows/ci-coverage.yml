@@ -27,7 +27,7 @@ jobs:
 
       - name: phpunit
         uses: php-actions/phpunit@v2
-          with:
+        with:
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
