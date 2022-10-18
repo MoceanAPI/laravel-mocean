@@ -15,12 +15,10 @@ class NoConfigurationTest extends AbstractTesting
         $app['config']->set('mocean.accounts.main.MOCEAN_API_KEY', '');
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage MOCEAN_API_KEY is not configured
-     */
     public function testExceptionRaisedIfSettingNotConfigured()
     {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('MOCEAN_API_KEY is not configured');
         app('mocean')->getMocean();
     }
 }
