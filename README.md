@@ -1,7 +1,7 @@
 Laravel Mocean
 ===============
 [![Latest Stable Version](https://img.shields.io/packagist/v/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
-[![CI-coverage](https://github.com/MoceanAPI/laravel-mocean/actions/workflows/ci-coverage.yml/badge.svg)](https://github.com/MoceanAPI/laravel-mocean/actions/workflows/ci-coverage.yml)
+[![build](https://github.com/MoceanAPI/laravel-mocean/actions/workflows/ci-coverage.yml/badge.svg)](https://github.com/MoceanAPI/laravel-mocean/actions/workflows/ci-coverage.yml)
 [![License](https://img.shields.io/packagist/l/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
 [![Total Downloads](https://img.shields.io/packagist/dt/mocean/laravel-mocean.svg)](https://packagist.org/packages/mocean/laravel-mocean)
 
