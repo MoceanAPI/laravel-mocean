@@ -5,9 +5,9 @@
     "keywords": ["sms","verify","laravel","mocean"],
     "license": "MIT",
     "require": {
-        "php": ">=5.5.0",
+        "php": ">=5.5.0 && <=",
         "mocean/client7": "^2.0.0",
-        "illuminate/support": "~4||~5||^6.0"
+        "illuminate/support": "~4||~5||~6||~7||~8||~9"
     },
     "require-dev": {
         "illuminate/console": "~4||~5||^6.0",
