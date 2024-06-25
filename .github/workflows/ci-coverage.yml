@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php: ["7.3", "7.4"]
+        php: ["8.2", "8.3"]
 
     steps:
       - uses: actions/checkout@v1
@@ -29,13 +29,14 @@ jobs:
           php_version: ${{ matrix.php }}
 
       - name: phpunit
-        uses: php-actions/phpunit@v2
+        uses: php-actions/phpunit@v3
         with:
           php_extensions: xdebug
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
           args: --coverage-text
           php_version:  ${{ matrix.php }}
+          test_suffix: .php
         env:
           XDEBUG_MODE: coverage
           TEST_NAME: Scarlett
